@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test_style.css">
+
+</head>
+<script>
+    var i = 0;
+    var txt = 'Frontend Developer & UI/UX Designer';
+    var speed = 60;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+
+<body onload="typeWriter()">
+    <div class="main_div">
+        <div class="main_overlay">
+            <nav class="main-nav dark transparent stick-fixed">
+                <div class="full-wrapper relative clearfix">
+                    <!-- Logo ( * your text or image into link tag *) -->
+                    <div class="nav-logo-wrap local-scroll">
+                        <a href="#top" class="logo">
+                            <img src="d_logo-removebg-preview.png" alt="Company logo" />
+                        </a>
+                    </div>
+                    <div class="mobile-nav" role="button" tabindex="0">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <!-- Main Menu -->
+                    <div class="inner-nav desktop-nav">
+                        <ul class="clearlist scroll-nav local-scroll">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#skills">skills</a></li>
+                            <li><a href="#Projects">Projects</a></li>
+                            <li><a href="#about">about</a></li>
+                            <!-- <li><a href="#news">News</a></li> -->
+                            <li><a href="#contact">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1> Dheeraj Shetty</h1>
+            <h4 id="demo"></h4>
+        </div>
+        <img src="5d00043816a6c695bcf1581a_scroll.gif" style="
+    width: 46px;
+">
+    </div>
+
+    <h1 style="letter-spacing:5px;text-align: center;"> Skill's</h1>
+    <div class="skill_div" id="skills">
+
+         <div class="talent">
+            <img src="output-onlinepngtools (7).png">
+            <h3>HTML</h3><progress id="file" value="95" max="100"> 95% </progress>
+        </div>
+        <div class="talent">
+            <img src="output-onlinepngtools (8).png">
+            <h3>CSS</h3>
+            <progress id="file" value="95" max="100"> 95% </progress>
+        </div>
+        <div class="talent" id="tj">
+            <img src="clipart4707396.png" style="width: 91px;">
+            <h3>JAVASCRIPT</h3>
+            <progress id="file" value="70" max="100"> 80% </progress>
+        </div>
+        <div class="talent">
+            <img src="output-onlinepngtools (9).png">
+            <h3>C</h3>
+            <progress id="file" value="80" max="100"> 80% </progress>
+        </div>
+        <!--<div class="talent">
+            <img src="1200px-Python.svg.png">
+            <h3>PYTHON</h3>
+            <progress id="file" value="50" max="100"> 50% </progress>
+        </div> -->
+       <!-- <div class="lang">
+            <img src="output-onlinepngtools (7).png" style="width:40px;">
+            <h3>HTML</h3><progress id="file" value="95" max="100"> 95% </progress>
+        </div> -->
+
+    </div>
+    
+    <div class="project_div" id="Projects">
+        <h1 style="letter-spacing:5px;text-align: center;"> Project</h1>
+        <img src="Screenshot (10).png">
+        <h3 style="color:white;text-align:center;">Online Streaming Website</h3>
+    </div>
+
+</body>
+<!-- <script src="test_script.js"></script> -->
+
+</html>
