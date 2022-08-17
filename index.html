@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test_style.css">
+    <script src="https://kit.fontawesome.com/0c99baffc2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+
+
+</head>
+<script>
+    var i = 0;
+    var txt = 'Frontend Developer & UI/UX Designer';
+    var speed = 140;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.target.elements.name.value = '';
+        e.target.elements.email.value = '';
+        e.target.elements.message.value = '';
+    });
+
+</script>
+
+<body onload="typeWriter()" style="background-color:black ;">
+    <div class="main_div">
+        <div class="main_overlay">
+            <nav class="main-nav dark transparent stick-fixed">
+                <div class="full-wrapper relative clearfix">
+                    <!-- Logo ( * your text or image into link tag *) -->
+                    <div class="nav-logo-wrap local-scroll">
+                        <a href="#top" class="logo">
+                            <img src="d_logo-removebg-preview.png" alt="Company logo" />
+                        </a>
+                    </div>
+                    <div class="mobile-nav" role="button" tabindex="0">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <!-- Main Menu -->
+                    <div class="inner-nav desktop-nav">
+                        <ul class="clearlist scroll-nav local-scroll">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#skills">skills</a></li>
+                            <li><a href="#Projects">Projects</a></li>
+                            <li><a href="#about">about</a></li>
+                            <!-- <li><a href="#news">News</a></li> -->
+                            <li><a href="#contact">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1 style=" font-family: Dosis, arial, sans-serif;"> Dheeraj Shetty</h1>
+            <h4 id="demo"></h4>
+        </div>
+        <img src="5d00043816a6c695bcf1581a_scroll.gif" style="
+    width: 46px;
+">
+    </div>
+
+    <h1 style="letter-spacing:5px;text-align: center;"> Skill's</h1>
+    <div class="skill_div" id="skills">
+
+        <div class="talent">
+            <img src="output-onlinepngtools (7).png">
+            <h3>HTML</h3><progress id="file" value="95" max="100"> 95% </progress>
+        </div>
+        <div class="talent">
+            <img src="output-onlinepngtools (8).png">
+            <h3>CSS</h3>
+            <progress id="file" value="95" max="100"> 95% </progress>
+        </div>
+        <div class="talent">
+            <img src="clipart4707396.png" style="width: 91px;">
+            <h3>JAVASCRIPT</h3>
+            <progress id="file" value="70" max="100"> 80% </progress>
+        </div>
+        <br>
+        <div class="talent">
+            <img src="output-onlinepngtools (9).png">
+            <h3>C</h3>
+            <progress id="file" value="80" max="100"> 80% </progress>
+        </div>
+        <div class="talent">
+            <img src="1200px-Python.svg.png">
+            <h3>PYTHON</h3>
+            <progress id="file" value="50" max="100"> 50% </progress>
+        </div>
+
+    </div>
+    <h1 style="letter-spacing:5px;text-align: center;"> Project</h1>
+    <div class="project_div" id="Projects">
+        <div class="p_child"></div>
+        <img src="Screenshot (10).png">
+        <h3 style="color:white;text-align:center;">Online Streaming Website</h3>
+    </div>
+    <div class="about_info" id="about">
+        <h1 style="letter-spacing:5px;text-align: center;"> About me</h1>
+        <h4 style="text-align:center;">I'm Dheeraj, a passionate freelancer bringing you programming and design from the
+            future. I am experienced in
+            developing web and desktop applications including full front end design. This includes brand identity,
+            graphics
+            and illustrations.I'm also intrested in reading novels,playing chess and cricket.</h4>
+    </div>
+    <h1 style="letter-spacing:5px;text-align: center;"> CONTACT ME</h1>
+    <section id="contact" id="Contacts">
+
+        <!-- <h1 class="section-header">Contact</h1> -->
+
+        <div class="contact-wrapper">
+
+            <!-- Left contact page -->
+
+            <form id="contact-form" class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
+                            required style="background-color:black;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                            required style="background-color:black;">
+                    </div>
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required
+                    style="background-color:black;"></textarea>
+
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <div class="alt-send-button">
+                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                    </div>
+
+                </button>
+
+            </form>
+
+            <!-- Left contact page -->
+
+            <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">
+                                Banglore,Karnataka</span></i></li>
+
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                    href="tel:1-212-555-5555" title="Give me a call">8970129271</a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                    href="mailto:#" title="Send me an email">dheerajshetty12345@gmail.com</a></span></i>
+                    </li>
+
+                </ul>
+
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <hr>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+<!-- <script src="test_script.js"></script> -->
+
+</html>
